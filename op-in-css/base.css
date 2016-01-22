@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	flex-flow:row ;
+	justify-content:space-around;
+	align-items:flex-end;
+	flex-flow:row wrap;
+}
+.menber{ 
+	background-color: gray;
+	min-width:200px;
+	min-height:200px;
+	margin: 10px;
+}
+ 
+.menber *{
+	position: absolute;
+	border: 1px solid #110b00;
+}
+
+.body{
+	background-color: #fbd800;
+}
+
+.no-border{
+	border:none;
+}
