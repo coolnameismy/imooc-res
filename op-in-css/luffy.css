@@ -173,5 +173,35 @@
 }
 
 .luffy .nose-tip{
-	
+    width: 10px;
+    height: 11px;
+    border-radius: 0 50% 50% 0;
+    top: 79px;
+    left: 107px;
+    z-index: 2;
+    transform: rotate(-18deg);
+    border-left: none;;;;
+
+}
+
+
+.luffy .left-eye-pupil{
+	top: 13px;
+    left: 11px;
+    width: 4px;
+    height: 4px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #110b00;
+}
+.luffy .right-eye-pupil{
+	top: 9px;
+    left: 16px;
+    width: 4px;
+    height: 4px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #110b00;
 }
