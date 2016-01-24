@@ -21,3 +21,9 @@ Y-offset:是指阴影的垂直偏移量，其值也可以是正负值，如果�
 兼容性：
 ie9+ 
 我们这里还涉及到一个各浏览器前缀的问题，比如说Mozilla内核的-moz，webkit内核的-webkit。经测试在最新版的Firefox和Google Chrome浏览器都无需加上前缀，但在safari中还是需要前缘的，为了能兼容支持的各大浏览器，我们在书写box-shadow的格式应该这样
+
+## 安装环境
+cnpm install gulp,gulp-livereload,gulp-ruby-sass,gulp-autoprefixer --save-dev
+
+https://github.com/gaearon/react-hot-loader
+https://github.com/gaearon/react-transform-boilerplate
