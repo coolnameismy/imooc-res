@@ -1,0 +1,78 @@
+$bgColor : black;
+$bdColor : black;
+
+body{
+	background-color: gray;
+}
+
+.menber{
+	/*background-color:;*/
+	background-color: white;
+}
+
+@mixin bgcolor{
+	background-color: $bgColor;	
+}
+
+@mixin bdcolor{
+	background-color: $bdColor;
+}
+
+.ear{
+
+	.signle{
+		
+	}
+	.left{
+		.left1{
+			@include bgcolor;
+			left: 33px;
+		    top: 31px;
+		    width: 20px;
+		    height: 38px;
+		    border-radius: 100% 10% 0% 10%;
+		    transform: rotate(-30deg)
+		}
+		.left2{
+			@include bgcolor;
+			left: 38px;
+		    top: 35px;
+		    width: 40px;
+		    height: 20px;
+		    border-radius: 10% 100% 25% 25%;
+		    transform: rotate(20deg)
+		}
+		
+	}
+	.right{
+		.right1{
+			@include bgcolor;
+			left: 73px;
+		    top: 30px;
+		    width: 20px;
+		    height: 38px;
+		    border-radius: 100% 10% 0% 10%;
+		    transform: rotate(-30deg)
+		}
+		.right2{
+			@include bgcolor;
+			left: 88px;
+		    top: 35px;
+		    width: 40px;
+		    height: 20px;
+		    border-radius: 10% 100% 25% 25%;
+		    transform: rotate(20deg)
+		}
+	}
+}
+
+
+.header{
+	@include bgcolor;
+	width: 110px;
+    height: 80px;
+    left: 105px;
+    border-radius: 50% 50% 40% 40%;
+    top: 61px;
+}
+
