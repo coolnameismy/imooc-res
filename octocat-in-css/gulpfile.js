@@ -7,21 +7,21 @@ var cssSrc = 'styles/',
 	
  // 这里的watch，是自定义的，写成live或者别的也行
 gulp.task('watch', function () {   
-
-
-    livereload.listen();
-    // /**/*.*的意思是 app文件夹下的 任何文件夹 的 任何文件
-    gulp.watch('./**/*.*', function(){
-    	console.log("2");
-        gulp.src('./**/*.*').pipe(livereload());
+    //监听css
+    gulp.watch('./styles/*.scss', function(){
+        gulp.run('css');
     });
+});
 
-    // var server = livereload(); 
-    // app/**/*.*的意思是 app文件夹下的 任何文件夹 的 任何文件
-    // gulp.watch('./**/*.*', function (file) {
-    //     console.log("1");
-    //     server.changed(file.path);
-    // });
-    //sass(cssSrc).pipe(gulp.dest(cssDst));
-    
+gulp.task('css', function () {
+    sass('./styles/*.scss').pipe(gulp.dest('./styles/'));
+});
+
+gulp.task('watch-livereload',function(){
+  livereload.listen();
+    // /**/*.*的意思是 app文件夹下的 任何文件夹 的 任何文件
+    gulp.watch('./**/*.html', function(file){
+        console.log(file);
+        gulp.src(file.path).pipe(livereload());
+    });
 });
