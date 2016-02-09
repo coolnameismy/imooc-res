@@ -1,5 +1,6 @@
 body{
 	background-color: gray;
+	color:white;
 }
 
 .box{
@@ -11,10 +12,10 @@ body{
 	background-color: red;
 }
 
-.yellow{
-	background-color: yellow;
-}
-
 .green{
 	background-color: green;
+}
+
+.yellow{
+	background-color: yellow;
 }
