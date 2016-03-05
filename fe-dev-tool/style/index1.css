@@ -1,0 +1,14 @@
+body {
+  background-color: gray;
+  color: white; }
+  body .box {
+    width: 100px;
+    height: 100px; }
+  body .red {
+    background-color: #9C27B0; }
+  body .green {
+    background-color: green; }
+  body .yellow {
+    background-color: yellow; }
+
+/*# sourceMappingURL=index1.css.map */
