@@ -1,8 +1,9 @@
 
 var gulp = require("gulp");
 var livereload = require("gulp-livereload");
+var browserSync = require("browser-sync");
 
-gulp.task('watch',function(){
+gulp.task('livereload',function(){
 
 	//启动livereload监听
 	livereload.listen();
@@ -14,3 +15,16 @@ gulp.task('watch',function(){
 	});
 	
 });
+
+
+gulp.task('browser-sync',function(){
+	browserSync.init({
+		server:{
+			baseDir:"./"
+		}
+	});
+
+});
+
+
+
