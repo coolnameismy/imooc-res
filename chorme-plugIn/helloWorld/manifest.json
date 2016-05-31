@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "hello world",
+  "description": "this is hello worlds",
+  "version": "0.1",
+
+  "permissions": [
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
