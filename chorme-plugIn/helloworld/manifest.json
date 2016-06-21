@@ -6,7 +6,7 @@
   "version": "0.2",
 
   "permissions": [
-
+      "bookmarks"
   ],
   "browser_action": {
     "default_icon": "icon.png",
